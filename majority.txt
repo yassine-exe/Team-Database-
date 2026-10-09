@@ -1,3 +1,5 @@
 Yassine: Data Engineer 
 Omar: BMD 
 Ali: Network and game dev 
+Osama: Optimization senior 
+
