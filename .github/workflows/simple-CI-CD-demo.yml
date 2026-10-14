@@ -12,3 +12,11 @@ jobs:
     steps:
       - name: first_job_lab3_Task
         run: echo "first_job_lab3_Task to simple CI/CD demo"
+  
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps: 
+        - name: Second_Job_Lab3_Task
+          run: echo "Second_Job_Lab3_Task"
+
