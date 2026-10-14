@@ -1,0 +1,14 @@
+
+name: Simple CI/CD demo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_job_lab3_Task
+        run: echo "first_job_lab3_Task to simple CI/CD demo"
