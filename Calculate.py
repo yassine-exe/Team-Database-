@@ -1,4 +1,5 @@
-def Calculate(a, b):
+
+def calculate(a, b):
     if type(a) not in (int, float) or type(b) not in (int, float):
         raise TypeError("Both operands must be numbers.")
 
@@ -6,15 +7,18 @@ def Calculate(a, b):
 
 
 def main():
-    print("py Calculator")
+    print("Python Calculator")
+
     try:
         a = float(input("Enter first number: "))
         b = float(input("Enter second number: "))
-        result = Calculate(a, b)
+
+        result = calculate(a, b)
         print("Result:", result)
-    except (ValueError, TypeError, ZeroDivisionError) as error:
+
+    except (ValueError, TypeError) as error:
         print("Error:", error)
 
 
-if __name__ == "__master__":
+if __name__ == "__main__":
     main()
